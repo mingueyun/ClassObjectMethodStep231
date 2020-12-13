@@ -6,22 +6,29 @@ using System.Threading.Tasks;
 
 namespace ClassObjectMethodStep231
 {
-    static class Program
+    class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
-            Classy ClueLess = new Classy();
-            int a;
-            ClueLess.ClassyNew(out a);
+            Classy something = new Classy();
+            Console.WriteLine("Enter a number ");
+            int num2 = Convert.ToInt32(Console.ReadLine());
 
+            int b;
+            something.ClassyNew(num2, out b);
+            Console.WriteLine(num2 + " divided by 2 is : " + b);
 
-            int b, c;
-            ClueLess.ClassyNew(out b, out c );
-            Console.WriteLine("the value of input is {0}\n", b);
-            Console.WriteLine("the value of input is {0}\n", c);
+            SomethingNew.something();
             Console.ReadLine();
+
         }
- 
-        
+    }
+
+    public static class SomethingNew
+    {
+        public static void something()
+        {
+            Console.WriteLine("calling a static class and method which is a string");
+        }
     }
 }

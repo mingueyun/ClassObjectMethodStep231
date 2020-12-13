@@ -8,18 +8,9 @@ namespace ClassObjectMethodStep231
 {
     public class Classy
     {
-        public void ClassyNew(out int num1)
+        public void ClassyNew(int num2, out int num1)
         {
-            Console.WriteLine("Enter a number ");
-            num1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(num1 + " divided by 2 is : " + num1 / 2);
+            num1 = num2 / 2;
         }
-        public void  ClassyNew(out int P, out int B)
-        {
-            P = 10;
-            B = 12;
-
-        }
-
     }
 }
